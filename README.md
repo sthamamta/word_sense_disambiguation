@@ -19,7 +19,7 @@ The input directory for this project must contain the file 'amazon_reviews.txt'.
 3. Go to codes directory
 4. To run the code, specify the shell script by running:
 ```sh
-  ./run.sh
+  ./run.bash
    ```
 This will run two code files: generate_context_word.py and naive_bayes.py.
 
