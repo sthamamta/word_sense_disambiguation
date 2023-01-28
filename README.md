@@ -30,22 +30,22 @@ After the program has finished running, the user will be prompted whether they w
 ### Phases of the project
 The project is broken down into the following phases:
 
-Phase 0: Word Pair Disambiguation
+###### Phase 0: Word Pair Disambiguation
 Use the 6 word pairs listed above to disambiguate.
 
-Phase I: Extracting Contexts
+###### Phase I: Extracting Contexts
 For each word in the ambiguous pair, extract a context of plus/minus 10 words from the corpus.
 Set 80% of the contexts aside for training and 20% for testing.
 
-Phase II: Creating Pseudowords
+###### Phase II: Creating Pseudowords
 For each of the word pairs, replace the word in the corpus with the pseudoword, and create a truth file of which was the original word.
 
-Phase III: Training
+###### Phase III: Training
 From the training corpus, calculate the probabilities for each of the two senses for each pseudoword.
 From the training corpus, using a window of size plus/minus 10, calculate the frequencies of each word seen in the window around each pseudoword occurrence. These words are the context features.
 
-Phase IV: Testing
+###### Phase IV: Testing
 Use the 20% of the contexts reserved for testing, to disambiguate the pseudowords.
 
-Phase V: Evaluation
+###### Phase V: Evaluation
 For each sense, determine whether the identified sense is correct or not. 
